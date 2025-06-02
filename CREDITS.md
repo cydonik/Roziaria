@@ -8,3 +8,4 @@ Modpack Creator:
 Testers:
   - Cydonic
   - ExaltedLily
+  - Lui5attack
