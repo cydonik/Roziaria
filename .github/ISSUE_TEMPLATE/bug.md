@@ -1,0 +1,35 @@
+name: Bug / Crash Report
+description: Report a bug or crash
+labels: [ "bug" ]
+assignees:
+    - cydonik
+body:
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                
+                ### Before you create your bug / crash report:
+                
+                1. Use the search function to make sure your issue hasn't already been reported
+                2. Check if you are on the latest version of the modpack
+                
+                --------------------------------------------------
+
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                
+                **Add a description**
+                
+                - Clearly describe what the issue is and how to reproduce it (if possible)
+                - Screenshots and videos are very helpful!
+
+    -   type: textarea
+        id: description
+        attributes:
+            label: "Description"
+            placeholder: "Describe your issue"
+        validations:
+            required: true
