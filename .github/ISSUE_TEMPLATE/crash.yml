@@ -1,0 +1,49 @@
+name: My game crashed!
+description: Report an issue that crashes the game.
+labels: [ "crash" ]
+assignees:
+    - cydonik
+body:
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                
+                ### Before you create your crash report:
+                
+                1. Use the search function to make sure your issue hasn't already been reported
+                2. Check if you are on the latest version of the modpack
+                
+                --------------------------------------------------
+
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                <br/>
+                
+                ### Context
+                What were you doing when the game crashed? Add images, screenshots, or videos if they could be useful.
+
+    -   type: textarea
+        id: context
+        attributes:
+            label: "Context"
+        validations:
+            required: true
+
+    -   type: markdown
+        attributes:
+            value: |
+                ### Crash Report
+                We need the crash report to figure out why the crash happened. 
+                This file can be found in the "crash-reports" folder of your Minecraft folder. 
+                Please upload the file to https://mclo.gs/ and put the link here. 
+                Do **not** paste the contents of the file here.
+                
+    -   type: input
+        id: crash_report
+        attributes:
+            label: "Crash Report"
+        validations:
+            required: true
