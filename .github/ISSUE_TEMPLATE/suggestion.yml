@@ -1,0 +1,37 @@
+name: I have a Suggestion!
+description: Give a Suggestion
+labels: [ "enhancement" ]
+assignees:
+    - cydonik
+body:
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                
+                ### Before you create your report:
+                
+                1. Use the search function to make sure your Suggestion hasn't already been made
+                
+                --------------------------------------------------
+
+    -   type: markdown
+        attributes:
+            value: |
+                <br/>
+                
+                **Add a description**
+                
+                - The Modrinth Link to your addition
+                - Briefiely List the features/items, included in this Addition
+                - Explain why it should be added and how it improves the modpack
+
+                _If this suggestion isnt about Mods, feel free to write whatever you'd like here!_
+
+    -   type: textarea
+        id: description
+        attributes:
+            label: "Description"
+            placeholder: "Explain your Suggestion"
+        validations:
+            required: true
